@@ -22,6 +22,11 @@ sum_loop:
 	
 exit: 
 	sw $t2, ($t1)	#store result into sum variable 
+	move $a0, $t2			#store sum into $a0
+	li $v0, 1			#store syscall code for print int 
+	syscall				#print sum
 	
+	li $v0, 10 			#load syscall code for exit 
+	syscall				#exit 
 	
 
