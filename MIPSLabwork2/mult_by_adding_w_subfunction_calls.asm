@@ -4,8 +4,6 @@ num1: .word 3
 num2: .word 6 
 
 .text
-
-
 main: 
 	lw $a0, num1			#a0 will store number to be multiplied
 	lw $a1, num2			#a1 will store number we're multiplying by 
